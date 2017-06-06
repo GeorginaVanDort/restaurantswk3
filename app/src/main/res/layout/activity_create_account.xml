@@ -7,6 +7,26 @@
     tools:context="com.epicodus.myrestaurants.ui.CreateAccountActivity">
 
     <EditText
+        android:id="@+id/createAccountName"
+        android:layout_width="0dp"
+        android:layout_height="44dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginLeft="29dp"
+        android:layout_marginRight="29dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="52dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccount"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <EditText
         android:id="@+id/createAccountEmail"
         android:layout_width="0dp"
         android:layout_height="44dp"
@@ -14,17 +34,17 @@
         android:layout_marginLeft="29dp"
         android:layout_marginRight="29dp"
         android:layout_marginStart="29dp"
+        android:layout_marginTop="0dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Email address"
+        android:inputType="textWebEmailAddress"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountName"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="0dp"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountName"
-        app:layout_constraintHorizontal_bias="0.0" />
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/createAccountPassword"
@@ -34,16 +54,16 @@
         android:layout_marginLeft="29dp"
         android:layout_marginRight="29dp"
         android:layout_marginStart="29dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Password"
+        android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/createAccountEmail"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        android:layout_marginTop="8dp"
-        app:layout_constraintTop_toBottomOf="@+id/createAccountEmail" />
+        tools:layout_constraintTop_creator="1" />
 
     <EditText
         android:id="@+id/createAccountPasswordConf"
@@ -55,34 +75,14 @@
         android:layout_marginStart="29dp"
         android:layout_marginTop="8dp"
         android:ems="10"
-        android:inputType="textPersonName"
         android:hint="Confirm Password"
+        android:inputType="textPassword"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/createAccountPassword"
         tools:layout_constraintLeft_creator="1"
         tools:layout_constraintRight_creator="1"
         tools:layout_constraintTop_creator="1" />
-
-    <EditText
-        android:id="@+id/createAccountName"
-        android:layout_width="0dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="29dp"
-        android:layout_marginLeft="29dp"
-        android:layout_marginRight="29dp"
-        android:layout_marginStart="29dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Name"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        tools:layout_constraintLeft_creator="1"
-        tools:layout_constraintRight_creator="1"
-        tools:layout_constraintTop_creator="1"
-        app:layout_constraintHorizontal_bias="0.0"
-        android:layout_marginTop="52dp"
-        app:layout_constraintTop_toBottomOf="@+id/createAccount" />
 
     <Button
         android:id="@+id/createAccountButt"
