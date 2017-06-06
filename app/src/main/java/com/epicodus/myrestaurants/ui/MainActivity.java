@@ -40,7 +40,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private FirebaseAuth.AuthStateListener authStateListener;
 
     @Bind(R.id.findRestaurantsButton) Button mFindRestaurantsButton;
-    @Bind(R.id.locationEditText) EditText mLocationEditText;
+//    @Bind(R.id.locationEditText) EditText mLocationEditText;
     @Bind(R.id.appNameTextView) TextView mAppNameTextView;
     @Bind(R.id.savedRestaurantsButton) Button mSavedRestaurantsButton;
 
